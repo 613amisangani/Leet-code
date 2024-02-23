@@ -1,4 +1,4 @@
-// fib number
+509// fib number
 #include<stdio.h>
 
 int fib(int num){
@@ -8,7 +8,7 @@ int fib(int num){
     }
     else
     {
-        return (num + fib(num-1));
+        return (fib(num-1) + fib(num-2));
     }
 
 }
@@ -17,7 +17,7 @@ int main()
     int j,i;
     printf("enter value for i:");
     scanf("%d",&i);
-    for(j=0;j<=i;j++){
+    for(j=1;j<=i;j++){
         printf("%d \t",fib(j));
     }
     return 0;

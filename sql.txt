@@ -1,0 +1,43 @@
+627.//swap salary
+
++-------------+----------+
+| Column Name | Type     |
++-------------+----------+
+| id          | int      |
+| name        | varchar  |
+| sex         | ENUM     |
+| salary      | int      |
++-------------+----------+
+id is the primary key (column with unique values) for this table.
+The sex column is ENUM (category) value of type ('m', 'f').
+The table contains information about an employee.
+
+ Write your MySQL query statement below
+UPDATE salary SET sex = case
+WHEN sex = 'm' THEN 'f' ELsE 'm'
+end;
+
+
+Input
+Salary =
+| id | name | sex | salary |
+| -- | ---- | --- | ------ |
+| 11 | A    | f   | 2500   |
+| 22 | B    | f   | 1500   |
+| 33 | C    | m   | 5500   |
+| 44 | D    | f   | 500    |
+Output
+| id | name | sex | salary |
+| -- | ---- | --- | ------ |
+| 11 | A    | m   | 2500   |
+| 22 | B    | m   | 1500   |
+| 33 | C    | f   | 5500   |
+| 44 | D    | m   | 500    |
+Expected
+| id | name | sex | salary |
+| -- | ---- | --- | ------ |
+| 11 | A    | m   | 2500   |
+| 22 | B    | m   | 1500   |
+| 33 | C    | f   | 5500   |
+| 44 | D    | m   | 500    |
+ 
