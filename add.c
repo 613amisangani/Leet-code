@@ -14,14 +14,14 @@ int addDigits(int num) {
         return num % 9;
     }
 }
-int main()
-{
-    int num;
-    printf("enter a value:");
-    scanf("%d",&num);
+// int main()
+// {
+//     int num;
+//     printf("enter a value:");
+//     scanf("%d",&num);
 
-    int result = addDigits(num);
-    printf("the result is %d",result);
+//     int result = addDigits(num);
+//     printf("the result is %d",result);
 
-    return 0;
-}
+//     return 0;
+// }
